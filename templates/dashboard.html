@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <title>Andro Privacy Hub Dashboard</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+  <h2>Live Peer Analytics</h2>
+  <div id="stats"></div>
+  <script>
+    var socket = io();
+    socket.on("peer_update", function(data) {
+      document.getElementById("stats").innerText = JSON.stringify(data, null, 2);
+    });
+  </script>
+</body>
+</html>
