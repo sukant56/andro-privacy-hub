@@ -1,0 +1,7 @@
+MASKED_IP = "192.0.0.2"
+TOR_SOCKS_PORT = 31001
+TOR_CONTROL_PORT = 32001
+I2PD_SOCKS_PORT = 33001
+I2PD_API_PORT = 34001
+I2PD_API = f"http://127.0.0.1:{I2PD_API_PORT}"
+PROXYCHAINS_CONF_PATH = "/data/data/com.termux/files/usr/etc/proxychains.conf"
