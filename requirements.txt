@@ -1,0 +1,6 @@
+requests
+stem
+matplotlib
+flask
+flask_socketio
+socks
